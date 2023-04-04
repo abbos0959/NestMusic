@@ -43,4 +43,7 @@ export class User {
   @OneToOne(() => Profile, (profile) => profile.user)
   @JoinColumn()
   profile: Profile;
+
+  @Column()
+  profileId: number;
 }

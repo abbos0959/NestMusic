@@ -18,10 +18,7 @@ export class Profile {
   firstname: string;
   @Column()
   lastname: string;
-  @Column({
-    type: 'enum',
-    array: true,
-  })
+  @Column()
   gender: Gender;
   @Column()
   age: number;
